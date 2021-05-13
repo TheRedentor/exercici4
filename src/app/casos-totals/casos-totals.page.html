@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Casos totals</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-col *ngFor="let one of totals">
+    <h3 style="color: blue;">Data: {{ one.data }}</h3>
+    <p>Defuncions diàries: {{ one.defuncions_di_ries }}</p>
+    <p>Nous casos diaris confirmats: {{ one.nous_casos_diaris_confirmats }}</p>
+    <p>Total de casos confirmats: {{ one.total_de_casos_confirmats }}</p>
+    <p>Total de defuncions: {{ one.total_de_defuncions }}</p>
+  </ion-col>
+</ion-content>

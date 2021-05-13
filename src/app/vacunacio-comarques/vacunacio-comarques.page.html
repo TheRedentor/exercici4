@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Vacunació comarques</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-col *ngFor="let one of totals">
+    <h3 style="color: blue;">Comarca: {{ one.comarca }}</h3>
+    <p>Fabricant: {{ one.fabricant }}</p>
+    <p>Total de vacunats: {{ one.total }}</p>
+  </ion-col>
+</ion-content>

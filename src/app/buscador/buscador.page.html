@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Buscador</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-searchbar debounce="500" (ionChange)="_ionChange($event)"></ion-searchbar>
+
+<ion-content>
+  <ion-col *ngFor="let one of totals">
+    <h3 style="color: blue;">Data: {{ one.data }}</h3>
+    <p>Sexe: {{ one.sexe }}</p>
+    <p>Provincia: {{ one.provincia }}</p>
+    <p>Comarca: {{ one.comarca }}</p>
+    <p>Municipi: {{ one.municipi }}</p>
+    <p>Districte: {{ one.districte }}</p>
+    <p>Dosi: {{ one.dosi }}</p>
+    <p>Data: {{ one.data }}</p>
+    <p>Fabricant: {{ one.fabricant }}</p>
+    <p>Recompte: {{ one.recompte }}</p>
+  </ion-col>
+</ion-content>
